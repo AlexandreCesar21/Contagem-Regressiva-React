@@ -7,18 +7,17 @@ import anonovo from './assets/anonovo.jpg'
 import useCountdown from './hooks/useCounterdown'
 
 function App() {
-  const x = useCountdown("Jan 1, 2023 00:00:00")
+  const [day, hour, minute, second] = useCountdown("Jan 1, 2024 00:00:00")
 
   return (
     <div className='App' style={{background: `url(${anonovo})`}}>
       <div className="container">
         <Title Title="Contagem regressiva para 2024"/>
-        <p>rrr</p>
         <div className="countdown-container">
-          <Counter Title="Dias" number={2}/>
-          <Counter Title="Horas" number={2}/>
-          <Counter Title="Minutos" number={2}/>
-          <Counter Title="Segundos" number={2}/>
+          <Counter Title="Dias" number={day}/>
+          <Counter Title="Horas" number={hour}/>
+          <Counter Title="Minutos" number={minute}/>
+          <Counter Title="Segundos" number={second}/>
         </div>
       </div>
     </div>
