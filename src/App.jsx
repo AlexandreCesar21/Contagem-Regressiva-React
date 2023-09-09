@@ -13,6 +13,7 @@ function App() {
     <div className='App' style={{background: `url(${anonovo})`}}>
       <div className="container">
         <Title Title="Contagem regressiva para 2024"/>
+        <p>rrr</p>
         <div className="countdown-container">
           <Counter Title="Dias" number={2}/>
           <Counter Title="Horas" number={2}/>
